@@ -10,6 +10,12 @@
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
   },
+  "lint-staged": {
+   "src/**/*.{js,jsx,json,css}": [
+     "prettier --single-quote --write",
+     "git add"
+   ]
+ },
   "scripts": {
     "precommit": "lint-staged",
     "start": "react-scripts start",
